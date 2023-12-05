@@ -1,7 +1,7 @@
 FROM node
 WORKDIR /dev/nodejs/app-from-github
 RUN apt-get update && apt-get install -y git
-RUN git clone <link>
+RUN git clone <link of dockerized project repo>
 ENV PORT=3000
 RUN npm ci
 CMD ["npm", "start"]
