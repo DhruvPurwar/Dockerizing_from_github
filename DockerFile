@@ -8,3 +8,5 @@ CMD ["npm", "start"]
 
 # docker build -t app-from-github-with-env
 # docker run -it --init --publish 3001:3000 app-from-github-with-env:latest
+# If you want to reflect code changes from your local to container, we use bind mounts. They work both way.
+# If you want to make changes from inside the container, use the bash command to open the bash shell and interact with the container.
